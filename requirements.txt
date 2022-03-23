@@ -1,0 +1,8 @@
+
+sklearn
+seaborn
+matplotlib
+numpy
+keras
+keras-datasets
+tensorflow
