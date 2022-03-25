@@ -97,6 +97,9 @@ Om een voorbeeld visueel te kunnen zien kan de matplot library gebruikt worden.
 import matplotlib.pyplot as plt
 ```
 ```python
+# needed to reshape into 'image' of 28x28 with 1 channel (black/white) form for matplotlib instead of single array.
+# remove after this step as our model expects the single array
+train_data = train_data.reshape((train_data.shape[0], 28, 28, 1)).astype('float32')
 print(train_labels[0])
 plt.imshow(train_data[0])
 plt.colorbar()
@@ -168,6 +171,8 @@ plt.xlabel('Predicted Values')
 plt.ylabel('True Values');
 plt.show();
 ```
+
+Uitleg over hoe de confusion matrix gelezen kan worden + verdere uitleg: https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/ 
 
 
 Wat nu?
