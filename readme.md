@@ -32,7 +32,7 @@ De ontwikkelaars van keras zijn zo vriendelijk geweest om de MNIST dataset in te
 Om de dataset in te laden kan het simpelweg geimporteerd worden:
 
 ```python
-from keras.datsets import mnist
+from keras.datasets import mnist
 (train_data, train_labels), (test_data, test_labels) = mnist.load_data()
 ```
 
